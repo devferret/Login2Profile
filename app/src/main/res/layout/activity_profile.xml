@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_pink_yellow"
+        android:focusableInTouchMode="true"
+        tools:context="com.example.myloginprofile.LoginActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_white_box_right"
+            android:padding="20dp"
+            android:text="@string/myName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/view2"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_white_box_left"
+            android:padding="20dp"
+            android:text="@string/myPhoneEmail"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/view3"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_white_box_right"
+            android:padding="20dp"
+            android:text="@string/myAddress"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/view4"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_white_box_left"
+            android:padding="20dp"
+            android:text="@string/myBirthGender"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/view5"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_white_box_right"
+            android:lineSpacingExtra="15dp"
+            android:padding="20dp"
+            android:text="@string/myHobby"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="124dp"
+            android:layout_height="125dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/DescImgLogin"
+            android:src="@drawable/my_portrait"
+            android:transitionName="imageView_portrait"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnCall"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/imgProfile"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyLoginProfile</string>
+    <string name="InputLogin">Email or phone</string>
+    <string name="InputPassword">Password</string>
+    <string name="ButtonLogin">Sign in</string>
+    <string name="DescImgLogin">Flat portrait</string>
+    <string name="DescBgLogin">Colour wave</string>
+
+    <integer name="durationAnim">2000</integer>
+
+    <string name="myName"> Warunyu Jaimuang\n\nPon</string>
+    <string name="myPhoneEmail"> 082-4976248\n\nwarunyu.pon@gmail.com</string>
+    <string name="myAddress">49/65 nimitmai 3/1 nimitmai rd.\n\nminburi bangkok 10510</string>
+    <string name="myBirthGender">11 October 1993\n\nMale</string>
+    <string name="myHobby">Freetime : Games Internet Youtube Movie Books Sleeping and Music</string>
+</resources>
